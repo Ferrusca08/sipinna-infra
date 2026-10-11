@@ -1,0 +1,17 @@
+# --- Estado de Terraform ----------------------------------------------------
+# El tfstate guarda valores sensibles en claro. Nunca al repositorio:
+# el lugar correcto es un backend S3 con bloqueo por DynamoDB.
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfplan
+terraform/terraform.tfvars
+crash.log
+
+# --- Artefactos -------------------------------------------------------------
+terraform/.build/
+
+# --- Sistema ----------------------------------------------------------------
+.DS_Store
+*.log
