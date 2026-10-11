@@ -3,11 +3,11 @@
 Terraform de la infraestructura AWS del Sistema de Reporte de Trabajo Infantil
 de SIPINNA Atizapán de Zaragoza.
 
-**Este repositorio es privado a propósito.** No contiene secretos —el `tfstate`
-está excluido—, pero sí el diseño completo de un sistema de gobierno que maneja
-datos de niñas, niños y adolescentes y de quienes denuncian: nombres de
-recursos, políticas IAM, configuración de Cognito y reglas de los buckets. El
-código de aplicación sí es público:
+Este repositorio contiene únicamente la definición de la infraestructura. El
+estado de Terraform queda excluido del control de versiones, porque guarda
+valores sensibles en claro.
+
+El código de aplicación vive en repositorios aparte:
 [movil](https://github.com/Ferrusca08/sipinna-movil) ·
 [admin](https://github.com/Ferrusca08/sipinna-admin) ·
 [backend](https://github.com/Ferrusca08/sipinna-backend).
